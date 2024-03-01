@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integerated Minds</title>
+  <link rel="stylesheet" href="hub.css">
+  <link rel="stylesheet" href="calculator.css">
+  <link rel="stylesheet" href="report.css">
+  <link rel="icon" type="favicon-32x32.png" sizes="32x32" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Integerated<span id="span">Minds</span></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#calculator">Calculator</a>
+            <a href="#report">Report Generator</a>
+        </nav>
+</header>
+<section class="home" id="home">
+    <div class="home-img">
+     <img src="favicon.png" alt="">
+    </div>
+    <div class="home-content">
+     <h5><span>Hello </span>Everyone!</h5>
+     <h1>We Are<span> Integereted Minds</span></h1>
+     <h6 class="text-animation">
+        <span>Project </span>Info: 
+     </h6>
+     <p>
+     Welcome To Our Website, Its Our <span>Teach League 2024</span> Project, Designed And Developed By <span>Integrated Minds</span>.
+     You Guys Can Access Our Website From Anywhere In The World And Calculate Anything And Can Also Create Report Cards. <span>Enjoy!</span>
+     </p>
+ </div>
+</section>
+<section class="claculator" id="calculator">  
+    <div class="calculator">
+        <h4 >Calculator</h4>
+    <div id="screen"></div>
+    <table>
+      <tr>
+        <td onclick="clearScreen()">C</td>
+        <td onclick="appendCharacter('/')">/</td>
+        <td onclick="backspace()">←</td>
+        <td class="operator" onclick="appendCharacter('*')">*</td>
+      </tr>
+      <tr>
+        <td onclick="appendCharacter('7')">7</td>
+        <td onclick="appendCharacter('8')">8</td>
+        <td onclick="appendCharacter('9')">9</td>
+        <td class="operator" onclick="appendCharacter('-')">-</td>
+      </tr>
+      <tr>
+        <td onclick="appendCharacter('4')">4</td>
+        <td onclick="appendCharacter('5')">5</td>
+        <td onclick="appendCharacter('6')">6</td>
+        <td class="operator" onclick="appendCharacter('+')">+</td>
+      </tr>
+      <tr>
+        <td onclick="appendCharacter('1')">1</td>
+        <td onclick="appendCharacter('2')">2</td>
+        <td onclick="appendCharacter('3')">3</td>
+        <td class="operator" rowspan="2" onclick="appendCharacter('=')">=</td>
+      </tr>
+      <tr>
+        <td colspan="2" onclick="appendCharacter('0')">0</td>
+        <td onclick="appendCharacter('.')">.</td>
+      </tr>
+    </table>
+  </div>
+<script src="calculator.js"></script>
+</section>
+<section class="report" id="report">
+    <div class="report">
+        <h3 class="heading">Report Generator</h3>
+        <form id="reportForm">
+          <label class="label" for="studentName">Student Name:</label>
+          <input type="text" id="studentName" required>
+      
+          <label for="className">Class:</label>
+          <input type="text" id="className" required>
+      
+          <label for="rollNumber">Roll Number:</label>
+          <input type="text" id="rollNumber" required>
+      
+          <h2 >Subjects and Marks:</h2>
+      
+          <div id="subjectsContainer"></div>
+      
+          <button type="button" onclick="addSubject()">Add Subject</button>
+      
+          <button type="button" onclick="generateReport()">Generate Report</button>
+        </form></div>
+      
+        <div id="reportOutput"></div>
+      
+        <script src="report.js"></script>
+</section>
+
+</body>

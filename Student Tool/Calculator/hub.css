@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+}
+:root {
+    --second--bg-color: black;
+    --text-color: white;
+    --main-color: rgb(0 190 0);
+}
+/* Header styling */
+/* Header styling */
+.header {
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0; /* Stick to the top */
+    left: 0; /* Stick to the left */
+    width: 100%; /* Full width */
+    padding: 1rem 9%; /* Padding for the header content */
+    background: var(--bg-color); /* Background color with proper transparency (adjust alpha as needed) */
+    backdrop-filter: blur(10px); /* Apply blur effect to the background */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items in the header */
+    align-items: center; /* Center items vertically */
+    z-index: 100; /* Ensure the header is above other elements */
+    /* background: black; (Remove this line to prevent overwriting the rgba background) */
+}
+
+
+.home-content h3{
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
+}
+header span{
+    color: var(--main-color);
+}
+span{
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+.logo {
+    background-color: var(--bg-color);
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.navbar a:hover, .navbar a.active {
+    color: var(--main-color);
+    border: green;
+    border-bottom: 3px solid var(--main-color);
+}
+.navbar a {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    background-color: var(--bg-color);
+}
+.home-img{
+    width: 2200px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 0px 2px var(--main-color);
+    background-size: cover;
+    background-color: green;
+}
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    overflow-y: hidden;
+}
+section {
+    padding: 10rem 3% 2rem;
+    overflow-x: hidden;
+}
+
+
+body {
+ background-color: var(--bg-color);
+  color: var(--text-color);
+    }
+
+::-webkit-scrollbar-track {
+        background-color: var(--bg-color);
+        width: 50px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+html {
+    overflow-x: hidden;
+}
+input, select{
+    margin-top:5px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(5, 177, 5);
+    box-sizing: border-box;
+    border-radius: 35px;
+    border: 3px solid black;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+button {
+    padding: 10px;
+    background-color:rgb(5, 177, 5);
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 8px;
+    border-radius:10px;
+  }
+h5{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+h6{
+    font-size: 20px;
+    margin-top: 10px;
+}
+p{
+    margin-top: 10px;
+    font-size: 16px;
+}
